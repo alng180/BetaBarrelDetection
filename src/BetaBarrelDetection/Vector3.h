@@ -1,0 +1,34 @@
+#ifndef VECTOR3_H
+#define VECTOR3_H
+
+#include <math.h>
+
+class Vector3 {
+public:
+	double x;
+	double y;
+	double z;
+
+	// constructors
+	Vector3();
+	Vector3(double nx, double ny, double nz);
+
+	// operator overloads
+	bool operator==(const Vector3 &other);
+	Vector3 operator- (const Vector3 &other);
+	Vector3 operator+ (const Vector3 &other);
+	Vector3 operator/ (const float &coeff);
+	Vector3 operator* (const float &coeff);
+
+	// vector functions
+	double dotProduct(const Vector3 &other);
+	Vector3 crossProduct(const Vector3 &other);
+	float distance(const Vector3 &other);
+
+	// static vector functions
+	static double getDotProduct(const Vector3 &left, const Vector3 &right);
+	static Vector3 getCrossProduct(const Vector3 &left, const Vector3 &right);
+	static float getDistance(const Vector3 &left, const Vector3 &right);
+};
+
+#endif
