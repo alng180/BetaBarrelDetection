@@ -4,6 +4,9 @@
 #include "Vector3.h"
 #include <omp.h>
 
+#define MAX_RADIUS 10
+#define MIN_RADIUS 3
+
 class Cylinder {
 public:
 	Vector3 p1;
@@ -14,7 +17,7 @@ public:
 	Cylinder();
 	Cylinder(Vector3 first, Vector3 second, double radius);
 
-	static Cylinder generateRandom(double max, double min);
+	static Cylinder generateRandom(int max, int min);
 };
 
 #endif

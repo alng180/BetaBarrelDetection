@@ -21,13 +21,16 @@
   <ItemGroup>
     <ClCompile Include="Cylinder.cpp" />
     <ClCompile Include="GeneticAlgorithm.cpp" />
+    <ClCompile Include="GeometricFunctions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MRC.cpp" />
     <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chromosome.h" />
     <ClInclude Include="Cylinder.h" />
     <ClInclude Include="GeneticAlgorithm.h" />
+    <ClInclude Include="GeometricFunctions.h" />
     <ClInclude Include="MRC.h" />
     <ClInclude Include="Vector3.h" />
   </ItemGroup>
