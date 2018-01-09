@@ -64,5 +64,11 @@ Vector3 GeometricFunctions::getVectorProjection(Vector3 origin, Vector3 firstPt,
 
 // using rodrigues' rotation equation
 Vector3 GeometricFunctions::rotateAroundVector(double theta, Vector3 rotationAxis, Vector3 vec) {
+	double cosTheta = cos(theta);
+	double sinTheta = sin(theta);
 
+	Vector3 rotationVec = vec * cosTheta + getCrossProduct(rotationAxis, vec) * sinTheta + rotationAxis * getDotProduct(rotationAxis, vec)*(1 - cosTheta);
+
+	return rotationVec;
 }
+
