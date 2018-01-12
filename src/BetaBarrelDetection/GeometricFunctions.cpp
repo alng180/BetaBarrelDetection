@@ -64,11 +64,32 @@ Vector3 GeometricFunctions::getVectorProjection(Vector3 origin, Vector3 firstPt,
 
 // using rodrigues' rotation equation
 Vector3 GeometricFunctions::rotateAroundVector(double theta, Vector3 rotationAxis, Vector3 vec) {
+	Vector3 normRotAxis = Vector3::normalizeVector(rotationAxis);
+	Vector3 normVec = Vector3::normalizeVector(vec);
+
 	double cosTheta = cos(theta);
 	double sinTheta = sin(theta);
 
-	Vector3 rotationVec = vec * cosTheta + getCrossProduct(rotationAxis, vec) * sinTheta + rotationAxis * getDotProduct(rotationAxis, vec)*(1 - cosTheta);
+	Vector3 rotationVec = normVec * cosTheta + getCrossProduct(normRotAxis, normVec) * sinTheta + normRotAxis * getDotProduct(normRotAxis, normVec)*(1 - cosTheta);
 
 	return rotationVec;
 }
 
+bool GeometricFunctions::isParallel(Vector3 first, Vector3 second) {
+	if (getDotProduct(first, second) == 1) {
+		return true;
+	}
+
+	return false;
+}
+
+//bool GeometricFunctions::getIntersection(Vector3 first, Vector3 second, Vector3 &result) {
+//	// is parallel
+//	if (isParallel(first, second)) {
+//		return false;
+//	}
+//
+//	// does not intersection
+//
+//	// intersects
+//}

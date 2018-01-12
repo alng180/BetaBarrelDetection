@@ -100,3 +100,23 @@ float Vector3::getDistance(const Vector3 &left, const Vector3 &right) {
 	double dz = right.z - left.z;
 	return (float)sqrt(dx * dx + dy * dy + dz * dz);
 }
+
+void Vector3::normalize() {
+	float dist = distance(*this);
+	
+	this->x = this->x / dist;
+	this->y = this->y / dist;
+	this->z = this->z / dist;
+}
+
+Vector3 Vector3::normalizeVector(const Vector3 &vec) {
+	float mag = sqrt(vec.x * vec.x + vec.y * vec.y + vec.z * vec.z);
+
+	Vector3 newVec;
+
+	newVec.x = vec.x / mag;
+	newVec.y = vec.y / mag;
+	newVec.z = vec.z / mag;
+
+	return newVec;
+}

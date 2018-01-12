@@ -10,7 +10,7 @@ public:
 	static double getDotProduct(Vector3 left, Vector3 right);
 	static Vector3 getCrossProduct(Vector3 left, Vector3 right);
 	static float getDistance(Vector3 left, Vector3 right);
-	static bool getIntersection(Vector3 first, Vector3 second, Vector3 &result);
+	//static bool getIntersection(Vector3 first, Vector3 second, Vector3 &result);
 
 	static bool isParallel(Vector3 first, Vector3 second);
 

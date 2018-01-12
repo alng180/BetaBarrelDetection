@@ -33,6 +33,12 @@
     <ClCompile Include="GeometricFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RayTrace.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Postprocessing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MRC.h">
@@ -51,6 +57,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GeometricFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTrace.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
