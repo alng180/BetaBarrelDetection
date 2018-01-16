@@ -26,3 +26,7 @@ std::vector<std::tuple<Vector3, std::vector<Vector3>>> Postprocessing::calculate
 
 	return raysSliceList;
 }
+
+std::vector<Vector3> Postprocessing::findBarrelfromSlice(std::tuple<Vector3, std::vector<Vector3>> slicePtList) {
+
+}
