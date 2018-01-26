@@ -22,7 +22,6 @@ class GeneticAlgorithm {
 
 		GeneticAlgorithm();
 		GeneticAlgorithm(int popsize, int generations, int mutationRate);
-		GeneticAlgorithm();
 
 		void initate(Chromosome* population, MRC mrc, int max, int min);
 		void evaluate(Chromosome* population, MRC mrc);

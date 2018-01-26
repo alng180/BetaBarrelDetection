@@ -24,19 +24,17 @@
     <ClCompile Include="GeometricFunctions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MRC.cpp" />
-    <ClCompile Include="Postprocessing.cpp" />
-    <ClCompile Include="RayTrace.cpp" />
     <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chromosome.h" />
     <ClInclude Include="Cylinder.h" />
-    <ClInclude Include="Postprocessing.h" />
+    <ClInclude Include="Postprocessing_AMP.h" />
     <ClInclude Include="GeneticAlgorithm.h" />
     <ClInclude Include="GeometricFunctions.h" />
     <ClInclude Include="MRC.h" />
-    <ClInclude Include="RayTrace.h" />
     <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector3_AMP.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -8,8 +8,7 @@ public:
 	double x;
 	double y;
 	double z;
-
-	//bool nullVector;
+	int nullVector;
 
 	// constructors
 	Vector3();
