@@ -5,6 +5,8 @@
 #include <chrono>
 #include <cstdlib>
 
+#include "MRC.h"
+
 #define POPULATION 100
 #define GENERATIONS 100
 #define MUTATIONRATE 10
@@ -33,4 +35,9 @@ int main(int argc, char *argv[]) {
 
 	// 
 	clock_t c_start = clock();
+
+	MRC mrc;
+	mrc.readFile(mrcFile);
+
+	Preprocessing
 }

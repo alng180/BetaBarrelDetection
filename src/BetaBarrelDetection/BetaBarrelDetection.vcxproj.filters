@@ -59,5 +59,8 @@
     <ClInclude Include="Postprocessing_AMP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Preprocessing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

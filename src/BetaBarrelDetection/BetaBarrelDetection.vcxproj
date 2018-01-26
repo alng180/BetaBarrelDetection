@@ -33,6 +33,7 @@
     <ClInclude Include="GeneticAlgorithm.h" />
     <ClInclude Include="GeometricFunctions.h" />
     <ClInclude Include="MRC.h" />
+    <ClInclude Include="Preprocessing.h" />
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector3_AMP.h" />
   </ItemGroup>
