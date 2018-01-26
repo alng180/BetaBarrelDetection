@@ -41,3 +41,13 @@ void MRC::readFile(std::string fileName, double threshold) {
 
 	ifs.close();
 }
+
+std::vector<Vector3> MRC::outputVectors() {
+	std::vector<Vector3> outputNodes = std::vector<Vector3>();
+	for (int i = 0; i < voxelCount; i++) {
+		Vector3 temp = voxels.at(i).position;
+		outputNodes.push_back(temp);
+	}
+
+	return outputNodes;
+}

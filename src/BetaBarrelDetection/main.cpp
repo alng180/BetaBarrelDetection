@@ -6,6 +6,9 @@
 #include <cstdlib>
 
 #include "MRC.h"
+#include "Preprocessing.h"
+#include "GeneticAlgorithm.h"
+#include "Postprocessing_AMP.h"
 
 #define POPULATION 100
 #define GENERATIONS 100
@@ -39,5 +42,5 @@ int main(int argc, char *argv[]) {
 	MRC mrc;
 	mrc.readFile(mrcFile);
 
-	Preprocessing
+	Preprocessing pp;
 }

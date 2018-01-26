@@ -100,6 +100,7 @@ public:
 	int voxelCount;
 	
 	void readFile(std::string fileName, double threshold);
+	std::vector<Vector3> outputVectors();
 private:
 	short slcLen;
 	short sizeOfVxl;
