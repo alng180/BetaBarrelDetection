@@ -40,7 +40,19 @@ int main(int argc, char *argv[]) {
 	clock_t c_start = clock();
 
 	MRC mrc;
-	mrc.readFile(mrcFile);
+	mrc.readFile(mrcFile, threshold);
 
 	Preprocessing pp;
+	MRC cleanedMRC;
+	if (helixMrc) {
+		MRC helixMRC = pp.loadHelicesMRC(helixFile, threshold);
+		cleanedMRC = pp.cleanUpHelicesMRC(mrc, helixMRC);
+	}
+
+	MRC finalMRC = pp.cleanUpIsolatedClusters(cleanedMRC);
+	
+	int maxPar = pp.findMax(finalMRC);
+	int minPar = pp.findMin(finalMRC);
+
+
 }

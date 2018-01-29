@@ -1,6 +1,8 @@
 #ifndef GENETICALGORITHM_H
 #define GENETICALGORITHM_H
 
+#include <algorithm>
+
 #include "Cylinder.h"
 #include "MRC.h"
 
@@ -18,7 +20,7 @@ class GeneticAlgorithm {
 	public:
 		int POPULATION_SIZE;
 		int GENERATIONS;
-		int MUTATIONS;
+		int MUTATION_RATE;
 
 		GeneticAlgorithm();
 		GeneticAlgorithm(int popsize, int generations, int mutationRate);
